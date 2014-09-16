@@ -105,10 +105,6 @@ define(function(require, exports, module) {
      * @return {TransitionableTransform}
      */
     TransitionableTransform.prototype.setRotate = function setRotate(eulerAngles, transition, callback) {
-        console.log("oh yeah");
-        console.log(eulerAngles[0] === null);
-        console.log(eulerAngles[1] === null);
-        console.log(eulerAngles[2] === null);
         if (eulerAngles[0] !== null) {
             this.rotateX.set(eulerAngles[0], transition, callback);
             this._finalRotate[0] = eulerAngles[0];
